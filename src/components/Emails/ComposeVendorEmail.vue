@@ -50,7 +50,7 @@
                     <div class="form-group">
                         <label for="message">Message </label>
                         <textarea class="form-control" id="message" v-model="form.message"  rows="5"></textarea>
-                        <small v-if="typeof errors.message != 'undefined'" class="text-danger text-bold">{{ errors.message }}</small>
+                        <small v-if="errors.message" class="text-danger text-bold">{{ errors.message }}</small>
                     </div>
                     <button type="button" class="btn btn-primary" @click="submitForm()"> Send Mail</button>
                 </form>
